@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+header{
+    margin-bottom: 25px;
+}
+
+header > img{
+    scale: .7;
+    margin-bottom: 20px;
+}
+
+
+.heading{
+    font-size: 2rem;
+    color: var(--Gray);
+}
+
+.heading > span{
+    color: black;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#email{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid var(--Pale-Blue);
+    min-width: 260px;
+}
+
+#warning{
+    color: var(--Light-Red);
+    font-size: .625rem;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#validateBtn{
+    padding: 10px 45px;
+    border-radius: 25px;
+    background-color: var(--Blue);
+    border: 0px;
+    color: white;
+}
+
+.dashboard >img{
+    width: 35vw;
+    margin: 45px 0;
+}
+
+
+/* footer css */
+footer > p{
+    font-size: .75rem;
+}
+
+.socials{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.socials > i{
+    margin: 0 8px;
+    color: var(--Blue);
+    border-radius: 50%;
+    border: .5px solid var(--Pale-Blue);
+}
+
+.socials > i:hover{
+    color: white;
+    background-color: var(--Blue);
+}
+
+
+.fa-facebook-f{
+    padding: 5px 8px;
+}
+.fa-twitter{
+    padding: 5px 5px;
+}
+.fa-instagram{
+    padding: 5px 6px; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .dashboard > img{
+        width: 85vw;
+    }
+    form{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+}
